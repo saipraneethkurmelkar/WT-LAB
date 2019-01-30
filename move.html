@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<title>Sai Praneeth(37)</title>
+    <script>
+        function move(numbers,a,b)
+        {
+             if(a < 0) {
+        a += numbers.length;
+       }
+    if(b < 0) {
+        b += numbers.length;
+        }
+          numbers.splice(b, 0, numbers.splice(a, 1)[0]);  
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var numbers=[10,20,30,40,50];
+        move(numbers,-1,-2);
+        console.log(numbers);
+        document.writeln(numbers);
+    
+    </script>
+</body>
+    </html>
+
